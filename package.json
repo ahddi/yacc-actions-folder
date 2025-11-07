@@ -1,0 +1,58 @@
+{
+  "name": "yacc-actions-folder",
+  "displayName": "Yacc Actions Folder",
+  "description": "Folds all Yacc semantic actions",
+  "version": "0.0.1",
+  "publisher": "ahddi",
+  "author": {
+    "name": "Adam Haddadi",
+    "url": "https://github.com/ahddi"
+  }
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:yacc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yacc-action-folder.toggleFoldActions",
+        "title": "Fold/Unfold semantic actions",
+        "icon": "$(list-selection)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "yacc-action-folder.toggleFoldActions",
+          "when": "resourceLangId == yacc",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
