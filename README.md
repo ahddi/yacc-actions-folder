@@ -1,71 +1,65 @@
-# yacc-actions-folder README
+# Yacc Actions Folder
 
-This is the README for your extension "yacc-actions-folder". After writing up a brief description, we recommend including the following sections.
+A simple VS Code extension that folds all semantic actions in Yacc files to make them easier to read and navigate.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Automatic folding**: Automatically detects and folds semantic actions in `.y` and `.yacc` files
+- **Zero configuration**: Works out of the box, no settings required
+- **Lightweight**: No dependencies, minimal performance impact
 
-For example if there is an image subfolder under your extension project workspace:
+![Demo](images/demo.gif)
+<!-- Add a demo GIF/screenshot if you have one -->
 
-\!\[feature X\]\(images/feature-x.png\)
+## Installation
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### From VSIX (Recommended)
+
+1. Download the latest `.vsix` file from the [Releases](https://github.com/ahddi/yacc-actions-folder/releases) page
+2. Open VS Code
+3. Go to Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
+4. Click the `...` menu at the top
+5. Select "Install from VSIX..."
+6. Choose the downloaded `.vsix` file
+
+### From Source
+
+```bash
+git clone https://github.com/ahddi/yacc-actions-folder.git
+cd yacc-actions-folder
+npm install
+npm run compile
+code --install-extension .
+```
+
+## Usage
+
+Simply open any Yacc file and click the list-shaped button on top-right of your editor to fold, re-click to unfold.
+
+## Supported File Types
+
+- `.y`
+- `.yacc`
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VS Code version 1.80.0 or higher
 
-## Extension Settings
+## Contributing
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-For example:
+## License
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+GPL
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- Initial release
+- Basic semantic action folding for Yacc files
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy cleaner Yacc files!** ✨

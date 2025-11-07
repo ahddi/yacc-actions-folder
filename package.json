@@ -2,12 +2,12 @@
   "name": "yacc-actions-folder",
   "displayName": "Yacc Actions Folder",
   "description": "Folds all Yacc semantic actions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "ahddi",
   "author": {
     "name": "Adam Haddadi",
     "url": "https://github.com/ahddi"
-  }
+  },
   "engines": {
     "vscode": "^1.105.0"
   },
