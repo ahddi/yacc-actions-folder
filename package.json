@@ -8,6 +8,10 @@
     "name": "Adam Haddadi",
     "url": "https://github.com/ahddi"
   },
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/ahddi/yacc-actions-folder.git"
+  },
   "engines": {
     "vscode": "^1.105.0"
   },
